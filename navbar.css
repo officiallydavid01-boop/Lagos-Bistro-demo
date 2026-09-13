@@ -1,0 +1,223 @@
+/* =========================
+   HEADER
+========================== */
+
+.site-header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 99999;
+
+    isolation: isolate;
+
+    transition:
+        background-color var(--transition-medium),
+        border-color var(--transition-medium);
+}
+
+.site-header.scrolled {
+    background: rgba(23, 19, 16, 0.88);
+
+    backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.site-header.scrolled {
+    background: rgba(23, 19, 16, 0.88);
+
+    backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =========================
+   NAVBAR
+========================== */
+
+.navbar {
+    min-height: var(--nav-height);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100000;
+}
+
+
+/* =========================
+   BRAND
+========================== */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    position: relative;
+    z-index: 1002;
+    
+    flex-shrink: 0;
+}
+
+
+/* ACTUAL LOGO */
+
+.brand-logo {
+    width: 46px;
+    height: 46px;
+    
+    object-fit: contain;
+    
+    display: block;
+    
+    flex-shrink: 0;
+}
+
+
+/* EXISTING TEXT BRAND */
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    
+    line-height: 0.85;
+}
+
+
+/* LAGOS */
+
+.brand-main {
+    font-family: var(--font-body);
+    
+    font-size: 1.05rem;
+    font-weight: 700;
+    
+    letter-spacing: 0.18em;
+}
+
+
+/* BISTRO */
+
+.brand-sub {
+    margin-top: 7px;
+    
+    font-family: var(--font-display);
+    
+    color: var(--color-gold);
+    
+    font-size: 0.8rem;
+    
+    letter-spacing: 0.3em;
+}
+
+
+/* =========================
+   NAV WRAPPER
+========================== */
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+
+/* =========================
+   NAV LINKS
+========================== */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    position: relative;
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: rgba(247, 242, 234, 0.82);
+
+    transition:
+        color var(--transition-fast);
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 1px;
+
+    background: var(--color-gold);
+
+    transition: width var(--transition-fast);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-soft-ivory);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* =========================
+   MOBILE TOGGLE
+========================== */
+
+.menu-toggle {
+    display: none !important;
+
+    width: 44px;
+    height: 44px;
+
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+
+    position: relative;
+    z-index: 99999;
+}
+
+.menu-toggle span {
+    display: block;
+
+    width: 23px;
+    height: 1px;
+
+    background: var(--color-soft-ivory);
+
+    transition:
+        transform var(--transition-fast),
+        opacity var(--transition-fast);
+}
+
+.menu-toggle span:nth-child(2) {
+    width: 17px;
+}
+/* Lock page scrolling when mobile menu is open */
+body.menu-open {
+    overflow: hidden;
+    height: 100vh;
+}

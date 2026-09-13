@@ -1,0 +1,83 @@
+:root {
+
+    /* =========================
+       COLOURS
+    ========================== */
+
+    --color-espresso: #171310;
+    --color-charcoal: #211c18;
+
+    --color-ivory: #f5f0e8;
+    --color-soft-ivory: #f7f2ea;
+
+    --color-gold: #c89b52;
+    --color-green: #173d32;
+    --color-terracotta: #a6533b;
+
+    --color-text-dark: #211a16;
+    --color-text-light: #f7f2ea;
+    --color-text-muted: #a69d92;
+
+    --color-border: rgba(247, 242, 234, 0.15);
+
+
+    /* =========================
+       TYPOGRAPHY
+    ========================== */
+
+    --font-display: "Cormorant Garamond", serif;
+    --font-body: "Manrope", sans-serif;
+
+
+    /* =========================
+       LAYOUT
+    ========================== */
+
+    --container-width: 1280px;
+
+    --section-space: 120px;
+
+    --nav-height: 88px;
+
+
+    /* =========================
+       BORDERS
+    ========================== */
+
+    --radius-sm: 4px;
+    --radius-md: 10px;
+    --radius-lg: 20px;
+
+
+    /* =========================
+       EFFECTS
+    ========================== */
+
+    --shadow-soft:
+        0 15px 50px rgba(0, 0, 0, 0.15);
+
+    --shadow-heavy:
+        0 25px 80px rgba(0, 0, 0, 0.35);
+
+
+    /* =========================
+       TRANSITIONS
+    ========================== */
+
+    --transition-fast: 200ms ease;
+    --transition-medium: 400ms ease;
+    --transition-slow: 700ms ease;
+
+}
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+}

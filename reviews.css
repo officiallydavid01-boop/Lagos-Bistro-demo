@@ -1,0 +1,521 @@
+/* =========================================
+   SECTION 06
+   REVIEWS
+========================================= */
+
+.reviews-section {
+    width: 100%;
+    padding: var(--section-space) 0;
+    background: var(--color-ivory);
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.reviews-container {
+    width: min(calc(100% - 40px), var(--container-width));
+    margin: 0 auto;
+}
+.review-card {
+    min-width: 0;
+    min-height: 390px;
+
+    padding: 42px 38px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--color-ivory);
+
+    border-right: 1px solid rgba(33, 26, 22, 0.18);
+
+    transition: transform 0.4s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.reviews-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.reviews-title {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.reviews-eyebrow {
+    display: block;
+    margin-bottom: 18px;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #A6533B;
+}
+
+
+.reviews-title h2 {
+    margin: 0;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(55px, 6vw, 86px);
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: -0.035em;
+
+    color: #211A16;
+}
+
+
+.reviews-title h2 span {
+    display: block;
+
+    font-style: italic;
+    font-weight: 400;
+
+    color: #173D32;
+}
+
+
+/* =========================================
+   RATING
+========================================= */
+
+.reviews-rating {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.rating-score {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 76px;
+    font-weight: 500;
+    line-height: 0.8;
+
+    color: #211A16;
+}
+
+
+.rating-details {
+    padding-left: 20px;
+    border-left: 1px solid rgba(33, 26, 22, 0.2);
+}
+
+
+.rating-stars {
+    display: flex;
+    gap: 3px;
+
+    white-space: nowrap;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+
+    color: #C89B52;
+}
+
+
+.rating-details p {
+    margin: 9px 0 0;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px;
+    line-height: 1.4;
+
+    color: #81766D;
+}
+
+
+/* =========================================
+   REVIEW LIST
+========================================= */
+
+.reviews-list {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    border-top: 1px solid rgba(33, 26, 22, 0.18);
+    border-bottom: 1px solid rgba(33, 26, 22, 0.18);
+}
+
+
+/* =========================================
+   REVIEW CARD
+========================================= */
+
+.review-card {
+    min-width: 0;
+    min-height: 390px;
+
+    padding: 42px 38px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #F5F0E8;
+
+    border-right: 1px solid rgba(33, 26, 22, 0.18);
+}
+
+
+.review-card:last-child {
+    border-right: none;
+}
+
+
+/* =========================================
+   FEATURED CARD
+========================================= */
+
+.review-featured {
+    background: #173D32;
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.review-card-top {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 42px;
+}
+
+
+.quote-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 76px;
+    font-weight: 500;
+    line-height: 0.45;
+
+    color: #A6533B;
+}
+
+
+.review-featured .quote-mark {
+    color: #C89B52;
+}
+
+
+/* =========================================
+   CARD STARS
+========================================= */
+
+.card-stars {
+    display: flex;
+    gap: 3px;
+
+    padding-top: 5px;
+
+    white-space: nowrap;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1;
+
+    color: #C89B52;
+}
+
+
+/* =========================================
+   REVIEW TEXT
+========================================= */
+
+.review-text {
+    max-width: 370px;
+    margin: 0;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 1.25;
+
+    color: #211A16;
+}
+
+
+.review-featured .review-text {
+    color: #F5F0E8;
+}
+
+
+/* =========================================
+   REVIEW PERSON
+========================================= */
+
+.review-person {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-top: auto;
+    padding-top: 35px;
+}
+
+
+.person-line {
+    width: 28px;
+    height: 1px;
+    flex-shrink: 0;
+
+    background: #C89B52;
+}
+
+
+.review-person strong,
+.review-person small {
+    display: block;
+}
+
+
+.review-person strong {
+    margin-bottom: 4px;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #211A16;
+}
+
+
+.review-person small {
+    font-family: 'Manrope', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #81766D;
+}
+
+
+.review-featured .review-person strong {
+    color: #F5F0E8;
+}
+
+
+.review-featured .review-person small {
+    color: rgba(245, 240, 232, 0.6);
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.reviews-bottom {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 42px;
+
+    gap: 30px;
+}
+
+
+.reviews-bottom p {
+    margin: 0;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-style: italic;
+
+    color: #211A16;
+}
+
+
+.reviews-bottom p span {
+    color: #173D32;
+}
+
+
+.reviews-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #211A16;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: #211A16;
+
+    transition:
+        gap 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.reviews-arrow {
+    font-size: 18px;
+    line-height: 1;
+}
+
+
+.reviews-button:hover {
+    gap: 27px;
+    color: #A6533B;
+    border-color: #A6533B;
+}
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .reviews-section {
+        padding: 90px 0;
+    }
+
+    .reviews-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 35px;
+        margin-bottom: 55px;
+    }
+
+    .reviews-title h2 {
+        font-size: clamp(50px, 9vw, 72px);
+    }
+
+    .reviews-rating {
+        align-self: flex-start;
+    }
+
+    .reviews-list {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card {
+        min-height: 340px;
+        border-right: none;
+        border-bottom: 1px solid rgba(33, 26, 22, 0.18);
+    }
+
+    .review-card:last-child {
+        border-bottom: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .reviews-section {
+        padding: 75px 0;
+    }
+
+    .reviews-container {
+        width: calc(100% - 40px);
+    }
+
+    .reviews-header {
+        margin-bottom: 45px;
+    }
+
+    .reviews-title h2 {
+        font-size: clamp(48px, 15vw, 64px);
+    }
+
+    .reviews-rating {
+        gap: 15px;
+    }
+
+    .rating-score {
+        font-size: 62px;
+    }
+
+    .rating-details {
+        padding-left: 15px;
+    }
+
+    .review-card {
+        min-height: 320px;
+        padding: 35px 28px;
+    }
+
+    .review-card-top {
+        margin-bottom: 32px;
+    }
+
+    .quote-mark {
+        font-size: 64px;
+    }
+
+    .review-text {
+        font-size: 25px;
+    }
+
+    .reviews-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 32px;
+        gap: 25px;
+    }
+
+    .reviews-bottom p {
+        font-size: 21px;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .reviews-button {
+        transition: none;
+    }
+
+    .review-card {
+        transition: none;
+    }
+
+    .review-card:hover {
+        transform: none;
+    }
+}
